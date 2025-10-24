@@ -1,0 +1,111 @@
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #f0f4f8, #e3eaf0);
+      color: #333;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 20px;
+    }
+
+    /* Container */
+    form {
+      background-color: #fff;
+      width: 100%;
+      max-width: 600px;
+      border-radius: 15px;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+      padding: 30px 40px;
+      transition: 0.3s ease;
+    }
+
+    form:hover {
+      transform: scale(1.02);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    }
+
+    h1 {
+      text-align: center;
+      color: #2c3e50;
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+
+    h2 {
+      color: #1e88e5;
+      font-size: 1.2rem;
+      margin: 25px 0 10px;
+      text-align: left;
+    }
+
+    label {
+      font-weight: 500;
+      color: #444;
+      display: block;
+      text-align: left;
+      margin-bottom: 6px;
+      font-size: 0.95rem;
+    }
+
+    input[type="text"],
+    textarea {
+      width: 100%;
+      padding: 10px 12px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 0.95rem;
+      transition: 0.2s;
+    }
+
+    input[type="text"]:focus,
+    textarea:focus {
+      border-color: #1e88e5;
+      box-shadow: 0 0 5px rgba(30, 136, 229, 0.4);
+      outline: none;
+    }
+
+    textarea {
+      resize: none;
+      height: 120px;
+    }
+
+    input[type="submit"] {
+      background: #1e88e5;
+      color: white;
+      font-size: 1rem;
+      font-weight: 600;
+      padding: 12px 25px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background 0.3s ease, transform 0.2s ease;
+      width: 100%;
+    }
+
+    input[type="submit"]:hover {
+      background: #1565c0;
+      transform: scale(1.03);
+    }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      form {
+        padding: 20px;
+      }
+
+      h1 {
+        font-size: 1.5rem;
+      }
+
+      h2 {
+        font-size: 1rem;
+      }
+    }
